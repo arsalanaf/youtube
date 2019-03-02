@@ -24,7 +24,7 @@ while order==False:
         order= True
     elif (float(BTC[-1][4])-float(BTC[-2][4]))<-500:
         print ('Sellll')
-        client.order_market_buy(symbol= symbol , quantity= quantity)
+        client.order_market_sell(symbol= symbol , quantity= quantity)
         order= True
     else:
         print ('Do nothing')
